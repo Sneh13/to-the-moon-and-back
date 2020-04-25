@@ -1,14 +1,31 @@
-var fname = document.querySelector('#fnsame');
-var lname = document.querySelector('#lnsame');
-var country = document.querySelector('#country');
-var gpass = document.querySelector('.getpass');
+let clickButton = document.querySelector('#button');
 
-var clickButton = document.querySelector('#button');
+
+// pass
+
+// let to = document.querySelector('#to');
 
 
 
 function submit() {
-    gpass.classList.add('showing');
+    // adding class
+    let gpass = document.querySelector('.getpass');
+    gpass.classList.add('showing')
+    let fname = document.querySelector('#fname').value;
+    let lname = document.querySelector('#lname').value;
+    let name = `${fname} ${lname}`;
+
+    let country = document.querySelector('#country').value;
+
+    // display
+    let na = document.querySelector('#na');
+    na.innerHTML = `<h5>Name:</h5> ${name}`;
+    na.style.fontSize = '1rem';
+
+    let from = document.querySelector('.from');
+    from.innerHTML = country;
+
+
 
 
 }

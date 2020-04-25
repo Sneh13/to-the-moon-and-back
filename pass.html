@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
@@ -60,9 +61,9 @@
                             <h1>Ticket to the Moon</h1>
                             <hr>
                             <div class="flight">
-                                <span class="from">from</span>
+                                <span class="from"></span>
                                 <i class="fas fa-space-shuttle"></i>
-                                <span class="to">to</span>
+                                <span class="to">Moon</span>
                             </div>
                         </div>
                     </div>
@@ -70,12 +71,12 @@
                     <div class="detail">
                         <div class="detaininfo">
                             <div class="det">
-                                <label for="name">Name:</label>
+                                <label for="name" id="na"></label>
                                 <span class="time"></span>
                             </div>
 
                         </div>
-                        <div class="qr"></div>
+                        <svg id="barcode"></svg>
                     </div>
                 </div>
 
@@ -90,7 +91,8 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
