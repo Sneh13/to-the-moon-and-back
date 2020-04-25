@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chandrayaan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+        <label><a  class="logo" href="index.html">Chandrayaan</a></label>
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="pass.html">Boarding Pass</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="link.html">Usefull Links</a></li>
+
+        </ul>
+    </nav>
+    <section class="getpass">
+        <div class="bpass">
+            <div class="getInfo">
+                <div class="title">
+                    <h1> About You</h1>
+
+                </div>
+                <div class="form">
+                    <div class="formItems">
+                        <input type="text" id="fname" required placeholder="First Name">
+
+                    </div>
+
+                    <div class="formItems">
+                        <input type="text" id="lname" required placeholder="Last Name">
+
+                    </div>
+
+                    <div class="formItems">
+                        <input type="text" id="country" required placeholder="Country">
+
+                    </div>
+
+                </div>
+                <div class="btn">
+                    <a href="#" id="button">Get Pass<i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+            <div class="passConteiner">
+                <div id="pass">
+                    <div class="head">
+                        <div class="headDetail">
+                            <h1>Ticket to the Moon</h1>
+                            <hr>
+                            <div class="flight">
+                                <span class="from">from</span>
+                                <i class="fas fa-space-shuttle"></i>
+                                <span class="to">to</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="detaininfo">
+                            <div class="det">
+                                <label for="name">Name:</label>
+                                <span class="time"></span>
+                            </div>
+
+                        </div>
+                        <div class="qr"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="get">
+
+                <span class="download">download</span>
+
+                <span class="close"> <a  href="pass.html">Close</a></span>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
