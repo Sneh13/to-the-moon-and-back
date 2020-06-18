@@ -1,45 +1,84 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Chandrayaan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandrayan</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <label class="logoContainer"><a  class="logo" href="index.html">Chandrayaan</a></label>
-        <ul class="navLinks">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="pass.html">Boarding Pass</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="link.html">Usefull Links</a></li>
-
-        </ul>
-    </nav>
-    <section class="showcase">
-        <!-- <div class="bg">
-            <img src="./nicolas-thomas-unsplash.jpg">
-            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-            href="https://unsplash.com/@nicolasthomas?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Nicolas Thomas">
-        <span
-            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span>
-            <span
-                style="display:inline-block;padding:2px 3px">Nicolas Thomas</span>
-                </a>
-        </div> -->
+    <header>
         <div class="container">
-            <h1>To the Moon and Back</h1>
-            <p>Fly me to the moon Let me play among the stars</p>
-            <a href="pass.html" class="button">Get Pass</a>
+            <nav class="nav">
+                <div class="meneutoggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <h1>Chandrayaan</h1>
+                </a>
+
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="index.html" class="navLink active">Home</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="pass.html" class="navLink">get pass</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="about.html" class="navLink">about</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="contact.html" class="navLink">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- end of Header -->
+    <!-- hero section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="subHeadline">
+                To the Moon and Back
+
+            </h2>
+            <div class="seprator">
+                <div class="line line-left"></div>
+                <div class="asterisk"><i class="fa fa-asterisk"></i></div>
+                <div class="line line-right"></div>
+
+            </div>
+
+            <div class="headlieDescription">
+
+                <div class="single-animation">
+                    <div class="lyrics">
+                        <h5>Fly me to the moon Let me play among the stars</h5>
+                    </div>
+                    <div class="btn">
+                        <a href="pass.html" id="button">Get Pass<i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </section>
+
+
+
+
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -2,29 +2,49 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Chandrayaan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chandrayan</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <!--Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-        <label><a  class="logo" href="index.html">Chandrayaan</a></label>
-        <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="pass.html">Boarding Pass</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="link.html">Usefull Links</a></li>
 
-        </ul>
-    </nav>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="meneutoggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <h1>Chandrayaan</h1>
+                </a>
+
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="index.html" class="navLink">Home</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="pass.html" class="navLink active">get pass</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="about.html" class="navLink">about</a>
+                    </li>
+
+                    <li class="navItem">
+                        <a href="contact.html" class="navLink">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <section class="getpass">
         <div class="bpass">
             <div class="getInfo">
@@ -58,7 +78,7 @@
                 <div id="pass">
                     <div class="head">
                         <div class="headDetail">
-                            <h1>Ticket to the Moon</h1>
+                            <h1>Journy to the Moon</h1>
                             <hr>
                             <div class="flight">
                                 <span class="from"></span>
@@ -71,7 +91,9 @@
                     <div class="detail">
                         <div class="detaininfo">
                             <div class="det">
-                                <label for="name" id="na"></label>
+                                <p class="deta">NAme</p>
+                                <div id="na">
+                                </div>
                                 <span class="time"></span>
                             </div>
 
@@ -92,7 +114,7 @@
     </section>
 
 
-    <script src="./script.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
